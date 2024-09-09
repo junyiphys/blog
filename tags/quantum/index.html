@@ -20,21 +20,15 @@
     var CONFIG = {"hostname":"junyiphys.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="It is great to inspire our minds beyond the field we are mainly focused on, especially for researchers. Most of us may do a deep dive into a field that only uses several old tools that were developed">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Short Note of Propensity Score">
-<meta property="og:url" content="https://junyiphys.github.io/posts/35f8914b.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Just Typing">
+<meta property="og:url" content="https://junyiphys.github.io/tags/quantum/index.html">
 <meta property="og:site_name" content="Just Typing">
-<meta property="og:description" content="It is great to inspire our minds beyond the field we are mainly focused on, especially for researchers. Most of us may do a deep dive into a field that only uses several old tools that were developed">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-03-24T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-03-25T12:52:58.638Z">
 <meta property="article:author" content="Junyi">
-<meta property="article:tag" content="math">
-<meta property="article:tag" content="learn">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://junyiphys.github.io/posts/35f8914b.html">
+<link rel="canonical" href="https://junyiphys.github.io/tags/quantum/">
 
 
 <script id="page-configurations">
@@ -42,12 +36,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : true,
+    isPost : false,
     lang   : 'en'
   };
 </script>
 
-  <title>Short Note of Propensity Score | Just Typing</title>
+  <title>Tag: quantum | Just Typing</title>
   
 
 
@@ -194,112 +188,51 @@
         <div class="content-wrap">
           
 
-          <div class="content post posts-expand">
+          <div class="content tag">
             
 
-    
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://junyiphys.github.io/posts/35f8914b.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Junyi">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Just Typing">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          Short Note of Propensity Score
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2024-03-25 00:00:00 / Modified: 20:52:58" itemprop="dateCreated datePublished" datetime="2024-03-25T00:00:00+08:00">2024-03-25</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <h2 class="collection-header">quantum
+          <small>Tag</small>
+        </h2>
+      </div>
 
       
-        <p>It is great to inspire our minds beyond the field we are mainly focused on, especially for researchers. Most of us may do a deep dive into a field that only uses several old tools that were developed 20–30 years ago. Therefore, I attended one talk in a series of workshops at Academia Sinica, talking about the idea. “Propensity score” is a revised method for swapping the possible bias from the designed experiment with the real world. The content is mainly based on the talk from the speaker, Dr. Jing-Rong Jhuang, Institute of Statistical Science.</p>
-<span id="more"></span>
-<h3 id="Intro">Intro</h3>
-<p>Consider an experiment separated a number of population into two groups, one is the control and the other is the experiment one. If we directly find that there is a significant difference between the experiment and the control group, is that enough to say the experiment is really helpful? Actually no, the statistical data may have a bias with some wired results, such as confounding bias. Therefore, matching, stratification, and regression are the three-main methods to solve these problems.</p>
-<p>Matching, if we do have a virtual world that can let all the sample to be the same, then we can set two groups with the same sample condition without any confounding bias. e.g., Building the experiment with the control group that with cloning human. That may reduce most of the confounding bias.</p>
-<p>Stratification, we can stratify the group into several subgroups and try to find if there is any high correlation. For example, age is a continue parameter, but we can change that into the different level like elders, teenager….etc.</p>
-<p>Regression, which set to be the linear correlation between two factors or multifactor. Therefore, it is a better way to find the correlation. But we can still improve a little from the regression, that is propensity score.</p>
-<blockquote>
-<p>A strong assumption (based on the talk): strongly ignorable treatment assignment. If all condition are known, the parallel universes can be created.</p>
-</blockquote>
-<h3 id="Several-ways">Several ways</h3>
-<h4 id="Propensity-score-matching">Propensity score matching</h4>
-<ul>
-<li>Select potential confounders</li>
-<li>Estimate propensity scores using logistic regression</li>
-<li>Greedy nearest neighborhood matching</li>
-<li>Check the balance of covariates by univariate analysis</li>
-</ul>
-<h4 id="Inverse-probability-weighting-for-ATT">Inverse probability weighting for ATT</h4>
-<ul>
-<li>Select confounders that may affect the assignment</li>
-<li>Estimate propensity scores using logistic regression</li>
-<li>Fit the regression model and include the PS as weight</li>
-</ul>
-<h3 id="Limitation">Limitation</h3>
-<ul>
-<li>At the beginning, we already assume all the confounders are in the parameter space. We may assume that all the important confounders are included already.</li>
-<li>As using the propensity scores, that means the sample size will be reduced into small groups.</li>
-</ul>
-
+    <div class="collection-year">
+      <span class="collection-header">2024</span>
     </div>
 
-    
-    
-    
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-      <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/math/" rel="tag"># math</a>
-              <a href="/tags/learn/" rel="tag"># learn</a>
-          </div>
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2024-09-09T00:00:00+08:00"
+              content="2024-09-09">
+          09-09
+        </time>
+      </div>
 
-        
+      <div class="post-title">
+          <a class="post-title-link" href="/posts/c1a5dff5.html" itemprop="url">
+            <span itemprop="name">Overview of Quantum Technology and Quantum Computing Market and trend in 2024</span>
+          </a>
+      </div>
 
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/posts/e67718db.html" rel="prev" title="Work Environment Setup">
-      <i class="fa fa-chevron-left"></i> Work Environment Setup
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/posts/254ba0cc.html" rel="next" title="Obsidian using experience - Great to use!">
-      Obsidian using experience - Great to use! <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
+    </header>
   </article>
+
+    </div>
+  </div>
   
   
+  
+
   
 
 
@@ -352,7 +285,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Intro"><span class="nav-number">1.</span> <span class="nav-text">Intro</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Several-ways"><span class="nav-number">2.</span> <span class="nav-text">Several ways</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Propensity-score-matching"><span class="nav-number">2.1.</span> <span class="nav-text">Propensity score matching</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Inverse-probability-weighting-for-ATT"><span class="nav-number">2.2.</span> <span class="nav-text">Inverse probability weighting for ATT</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Limitation"><span class="nav-number">3.</span> <span class="nav-text">Limitation</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

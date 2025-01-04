@@ -28,7 +28,7 @@
 <meta property="og:description" content="Why do I restart a new one? It’s more than a year that I didn’t update the blog and lolts of the info are hard to remember if you didn’t do it frequenlty and routinely. It’s really important to write">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-11-15T01:39:00.000Z">
-<meta property="article:modified_time" content="2023-12-16T05:21:24.307Z">
+<meta property="article:modified_time" content="2025-01-04T23:46:16.903Z">
 <meta property="article:author" content="Junyi">
 <meta property="article:tag" content="hexo, blog, fun">
 <meta name="twitter:card" content="summary">
@@ -230,7 +230,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2023-12-16 13:21:24" itemprop="dateModified" datetime="2023-12-16T13:21:24+08:00">2023-12-16</time>
+                <time title="Modified: 2025-01-05 07:46:16" itemprop="dateModified" datetime="2025-01-05T07:46:16+08:00">2025-01-05</time>
               </span>
 
           
@@ -251,7 +251,7 @@
 <h3 id="Install-Hexo">Install Hexo</h3>
 <ol>
 <li>Install <a target="_blank" rel="noopener" href="https://git-scm.com/download/win">Git</a></li>
-<li>Install Node.js through nvs from the <a target="_blank" rel="noopener" href="https://github.com/jasongin/nvs/">Github releasing page</a>. (Hexo service is based on GitHub)</li>
+<li>Install Node.js through <strong>nvs</strong> from the <a target="_blank" rel="noopener" href="https://github.com/jasongin/nvs/">Github releasing page</a>. (Hexo service is based on GitHub; nvs is the node.js version management tool for Windows OS recommend by Hexo officially.)</li>
 <li>Open PowerShell and type <code>nvs</code>, select the LTS version (e.g. the version with the name like <strong>Gallium</strong>) and install it. <strong>Note</strong>: need to start the</li>
 <li>Install Hexo with the command <code>npm install -g hexo-cli</code></li>
 <li>Check the version through <code>hexo -v</code></li>
@@ -284,6 +284,30 @@
 <li>
 <p><code>npm install hexo-deployer-git --save</code></p>
 <p>Deploy the blog to GitHub</p>
+</li>
+</ul>
+<h3 id="Using-Hexo-in-Windows">Using Hexo in Windows</h3>
+<p>This section is to record how to start the hexo environment in Windows. we need to start the node.js first under nvs commend.</p>
+<ul>
+<li>
+<p>Open the Windows Powershell (Or just right click the “open Terminal” from the options in the folder in explorer) in the blog folder where you generate the Hexo blog.</p>
+</li>
+<li>
+<p>Launch nvs and select the proper node.js version (The version that I install the node.js)</p>
+</li>
+<li>
+<p>Can start to commend Hexo like hexo s; hexo g; hexo d…etc.</p>
+<ul>
+<li>
+<p>S for server (run the blog in the local machine)</p>
+</li>
+<li>
+<p>g for generate (generate the static blog website for uploading)</p>
+</li>
+<li>
+<p>d for deploy (deploying the context to the internet)</p>
+</li>
+</ul>
 </li>
 </ul>
 <h3 id="Reference">Reference</h3>
@@ -374,7 +398,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Why-do-I-restart-a-new-one"><span class="nav-number">1.</span> <span class="nav-text">Why do I restart a new one?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-Hexo"><span class="nav-number">2.</span> <span class="nav-text">Install Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-a-new-blog-upload-to-the-GitHub"><span class="nav-number">3.</span> <span class="nav-text">Generate a new blog &amp; upload to the GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reference"><span class="nav-number">4.</span> <span class="nav-text">Reference</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Why-do-I-restart-a-new-one"><span class="nav-number">1.</span> <span class="nav-text">Why do I restart a new one?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-Hexo"><span class="nav-number">2.</span> <span class="nav-text">Install Hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-a-new-blog-upload-to-the-GitHub"><span class="nav-number">3.</span> <span class="nav-text">Generate a new blog &amp; upload to the GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Using-Hexo-in-Windows"><span class="nav-number">4.</span> <span class="nav-text">Using Hexo in Windows</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Reference"><span class="nav-number">5.</span> <span class="nav-text">Reference</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -388,9 +412,15 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">posts</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
@@ -422,7 +452,7 @@
 <div class="copyright">
   
   &copy; 2022 – 
-  <span itemprop="copyrightYear">2024</span>
+  <span itemprop="copyrightYear">2025</span>
   <span class="with-love">
     <i class="fa-solid fa-atom"></i>
   </span>
